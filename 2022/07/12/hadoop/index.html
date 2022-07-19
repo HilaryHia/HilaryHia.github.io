@@ -1,0 +1,1750 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-07-12
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    15.5k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    55 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Hadoop"><a href="#Hadoop" class="headerlink" title="Hadoop"></a>Hadoop</h2><blockquote>
+<ul>
+<li>apache开发的一种分布式系统架构</li>
+<li>主要解决海量数据从存储以及分析计算问题</li>
+</ul>
+<p><strong>hadoop优势</strong></p>
+<ul>
+<li>高可靠性：Hadoop底层维护多个数据副本，所以即使Hadoop某个计算元素或储存出现故障，也不会导致数据的丢失。</li>
+<li>靠扩展性：在集群间分配任务数据，可方便的扩展数以千计的节点。</li>
+<li>高效性：在MapReduce的思想下，Hadoop是并行工作的，以加快任务处理速度。</li>
+<li>高容错性：：能够自动将失败的任务重新分配。</li>
+</ul>
+</blockquote>
+<p><strong>Hadoop的组成</strong></p>
+<ul>
+<li><p>在Hadoop1.x时代，Hadoop中的MapReduce同时处理业务逻辑运算和资源的调度，耦合性较大。</p>
+</li>
+<li><p>在Hadoop2.x时代，增加了Yarn。Yarn只负责资源的调度，MapReduce只负责运算。</p>
+</li>
+<li><p>Hadoop3.x在组成上没有什么变化。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmFkZW5fSkg=,size_15,color_FFFFFF,t_70,g_se,x_16#pic_center.png" alt="在这里插入图片描述"></p>
+</li>
+</ul>
+<p>hadoop生态圈结构大致如下：</p>
+<p><img src="D:\自学\大数据\hadoop.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI1MDYyMjk5,size_16,color_FFFFFF,t_70-16551205118195-16551205133037.png" alt="img"></p>
+<h3 id="HDFS"><a href="#HDFS" class="headerlink" title="HDFS"></a>HDFS</h3><h4 id="结构-amp-功能"><a href="#结构-amp-功能" class="headerlink" title="结构&amp;功能"></a>结构&amp;功能</h4><p>HDFS是Hadoop Distribute File System 的简称，也就是Hadoop的一个分布式文件系统。</p>
+<p>HDFS使用Master和Slave结构对集群进行管理。一般一个 HDFS 集群<strong>只有一个 Namenode（master） 和一定数目的Datanode（slave） 组成</strong>。Namenode 是 HDFS 集群主节点，Datanode 是 HDFS 集群从节点，两种角色各司其职，共同协调完成分布式的文件存储服务。</p>
+<p>HDFS是整个hadoop体系的基础，负责数据的存储与管理。HDFS有着高容错性（fault-tolerant）的特点，并且设计用来部署在低廉的（low-cost）硬件上。而且它提供高吞吐量（high throughput）来访问应用程序的数据，适合那些有着超大数据集（large data set）的应用程序。</p>
+<ul>
+<li><p>client：切分文件，访问HDFS时，首先与NameNode交互，获取目标文件的位置信息，然后与DataNode交互，读写数据</p>
+</li>
+<li><p><strong>NameNode</strong>：master节点，每个HDFS集群只有一个，管理HDFS的名称空间和数据块映射信息，配置相关副本信息，处理客户端请求。</p>
+<blockquote>
+<ul>
+<li><p>我们把目录结构及文件分块位置信息叫做元数据。Namenode 负责维护整个hdfs文件系统的目录树结构，以及每一个文件所对应的 block 块信息（block 的id，及所在的datanode 服务器）。	</p>
+</li>
+<li><p>Namenode节点负责确定指定的文件块到具体的Datanode结点的映射关系。在客户端与数据节点之间共享数据。</p>
+</li>
+<li><p>管理Datanode结点的状态报告，包括Datanode结点的健康状态报告和其所在结点上数据块状态报告， 以便能够及时处理失效的数据结点。</p>
+</li>
+</ul>
+</blockquote>
+<img src="D:\自学\大数据\hadoop.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NDg3Ng==,size_16,color_FFFFFF,t_70-165562665706310-165562665872713.png" alt="在这里插入图片描述" style="zoom:50%;" />
+</li>
+<li><p><strong>DataNode</strong>：slave节点，存储实际数据，并汇报状态信息给NameNode，默认一个文件会备份3份在不同的DataNode中，实现高可靠性和容错性。</p>
+<blockquote>
+<ul>
+<li>文件的各个 block 的具体存储管理由 datanode 节点承担。每一个 block 都可以在多个datanode 上。Datanode 需要定时向 Namenode 汇报自己持有的 block信息。 存储多个副本（副本数量也可以通过参数设置 dfs.replication，默认是 3）。</li>
+<li>向Namenode结点报告状态。每个Datanode结点会周期性地向Namenode发送心跳信号和文件块状态报告。心跳是每3秒一次，心跳返回结果带有namenode给该datanode的命令如复制块数据到另一台机器，或删除某个数据块。如果超过10分钟没有收到某个datanode的心跳，则认为该节点不可用。DataNode启动后向namenode注册，通过后，周期性（1小时）的向namenode上报所有的块信息。</li>
+<li>执行数据的流水线复制。当文件系统客户端从Namenode服务器进程获取到要进行复制的数据块列表后，完成文件块及其块副本的流水线复制。一个数据块在datanode上以文件形式存储在磁盘上，包括两个文件，一个是数据本身，一个是元数据包括数据块的长度，块数据的校验和，以及时间戳。</li>
+</ul>
+<p>	</p>
+</blockquote>
+</li>
+<li><p>Secondary NameNode：辅助NameNode，实现高可靠性，定期合并fsimage和fsedits，推送给NameNode；紧急情况下辅助和恢复NameNode，但其并非NameNode的热备份。</p>
+</li>
+</ul>
+<p>Hadoop 2为HDFS引入了两个重要的新功能 ——Federation和高可用（HA）：</p>
+<ul>
+<li><p>Federation允许集群中出现多个NameNode，之间相互独立且不需要互相协调，各自分工，管理自己的区域。 DataNode 被用作通用的数据块存储设备。每个 DataNode 要向集群中所有NameNode 注册，并发送心跳报告，执行所有 namenode的命令。</p>
+</li>
+<li><p>HDFS中的高可用性消除了Hadoop 1中存在的单点故障，其中，NameNode故障将导致集群中断。HDFS的高可用性提供故障转移功能（备用节点从失败的主NameNode接管工作的过程）以实现自动化。</p>
+</li>
+</ul>
+<h4 id="HDFS分块存储"><a href="#HDFS分块存储" class="headerlink" title="HDFS分块存储"></a>HDFS分块存储</h4><blockquote>
+<p> hdfs将所有的文件全部抽象成为block块来进行存储，不管文件大小，全部一视同仁都是以block块的统一大小和形式进行存储，方便我们的分布式文件系统对文件的管理。</p>
+<p>所有的文件都是以block块的方式存放在HDFS文件系统当中，在Hadoop1当中，文件的block块默认大小是64M，Hadoop2当中，文件的block块大小默认是128M，block块的大小可以通过hdfs-site.xml当中的配置文件进行指定。（这里数据超过128M，便进行切分，如果没有超过128M，就不用切分，有多少算多少，不足128M的也是一个快。这个快的大小就是100M，没有剩余28M这个概念。）</p>
+</blockquote>
+<p><strong>抽象成数据块的好处：</strong></p>
+<ol>
+<li><pre><code>一个文件有可能大于集群中任意一个磁盘 。20T/128 = xxx块，这些block块属于一个文件
+</code></pre>
+<ol start="2">
+<li><pre><code>使用块抽象而不是文件,可以简化存储子系统。
+</code></pre>
+<ol start="3">
+<li><pre><code>块非常适合用于数据备份进而提供数据容错能力和可用性
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><strong>块缓存：</strong></p>
+<p>通常DataNode从磁盘中读取块，但对于访问频繁的文件，其对应的块可能被显示的缓存在DataNode的内存中，以堆外块缓存的形式存在。默认情况下，一个块仅缓存在一DataNode的内存中，当然可以针对每个文件配置DataNode的数量。作业调度器通过在缓存块的DataNode上运行任务，可以利用块缓存的优势提高读操作的性能。</p>
+<h4 id="HDFS副本机制"><a href="#HDFS副本机制" class="headerlink" title="HDFS副本机制"></a>HDFS副本机制</h4><p>HDFS视硬件错误为常态，硬件服务器随时有可能发生故障。为了容错，文件的所有 block 都会有副本。每个文件的 block 大小和副本系数都是可配置的。应用程序可以指定某个文件的副本数目。副本系数可以在文件创建的时候指定，也可以在之后改变。数据副本默认保存三个副本，我们可以更改副本数以提高数据的安全性，在hdfs-site.xml当中修改以下dfs.replication配置属性，即可更改文件的副本数。</p>
+<p><strong>副本节点选择：</strong></p>
+<p>低版本Hadoop副本节点选择<br>    第一个副本在client所处的节点上。如果客户端在集群外，随机选一个。<br>    第二个副本和第一个副本位于不相同机架的随机节点上。<br>    第三个副本和第二个副本位于相同机架，节点随机。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NDg3Ng==,size_16,color_FFFFFF,t_70-16556261571643.png" alt="在这里插入图片描述" style="zoom:50%;" />Hadoop2.7.2副本节点选择<br>    第一个副本在client所处的节点上。如果客户端在集群外，随机选一个。<br>    第二个副本和第一个副本位于相同机架，随机节点。<br>    第三个副本位于不同机架，随机节点。</p>
+<img src="D:\自学\大数据\hadoop.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NDg3Ng==,size_16,color_FFFFFF,t_70-16556261820955-16556261834498.png" alt="在这里插入图片描述" style="zoom:50%;" />
+
+
+
+<p><strong>NameSpace</strong></p>
+<p>HDFS 支持传统的层次型文件组织结构。用户或者应用程序可以创建目录，然后将文件保存在这些目录里。文件系统名字空间的层次结构和大多数现有的文件系统类似：用户可以创建、删除、移动或重命名文件。<br>Namenode 负责维护文件系统的名字空间，任何对文件系统名字空间或属性的修改都将被Namenode 记录下来。 HDFS 会给客户端提供一个统一的目录树，客户端通过路径来访问文件，形如：hdfs:&#x2F;&#x2F;namenode:port&#x2F;dir-a&#x2F;dir-b&#x2F;dir-c&#x2F;file.data。 </p>
+<p><strong>HDFS数据组织是分阶段的</strong></p>
+<p>客户创建一个文件的请求并不是马上到达NameNode,实际上，HDFS客户把文件数据先存放到本地的一个临时文件上，应用程序间接地向这个文件写数据。当本地文件数据积累到超过一个块的容量时，HDFS客户联系NameNode。NameNode把文件名插入到文件系统结构中，并为之分配数据块。NameNode向客户返有datanode和目标文件块的请求。然后客户把本地的缓存文件flush到指定datanode的数据块中。当文件关闭时，本地剩下未冲刷的数据将转移到datanode中，然后客户高树NameNode文件已经关闭。如果NameNode在文件关闭之前死掉了，那文件将会丢失。</p>
+<p><strong>HDFS复制流水线</strong></p>
+<p>假设HDFS文件副本数为3，当客户写数据到HDFS文件时，数据先写到本地文件，当本地文件积累到满一个块时，客户冲NameNode找到3个datanode。客户向第一NameNode flush数据块。第一个datanode开始接收一小部分数据(4KB),把每一小部分数据写入本地仓库并且把这部分数据向第二个datanode传输，第二个datanode开始接收数据，写人本地仓库并向第三个datanode传输数据，第三个datanode接收数据后写人本地仓库。就这样一个datanode可以通过管道从前一个datanode的中接收数据并同时把数据通过管道写入下一个datanode中，数据就这样在管道中从一个datanode传输到下一个datanode。</p>
+<h3 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h3><p>YARN是下一代MapReduce，即MRv2，是在第一代MapReduce基础上演变而来的，主要是为了解决原始Hadoop扩展性较差，不支持多计算框架而提出的。</p>
+<p>Apache Hadoop YARN （Yet Another Resource Negotiator，另一种资源协调者）是一种新的 Hadoop 资源管理器，它是一个通用资源管理系统和调度平台，可为上层应用提供统一的资源管理和调度，它的引入为集群在利用率、资源统一管理和数据共享等方面带来了巨大好处。</p>
+<blockquote>
+<ul>
+<li>yarn 并不清楚用户提交的程序的运行机制</li>
+<li>yarn 只提供运算资源的调度（用户程序向 yarn 申请资源，yarn 就负责分配资源</li>
+<li>yarn 中的主管角色叫 ResourceManager</li>
+<li>yarn 中具体提供运算资源的角色叫 NodeManager</li>
+<li>yarn与运行的用户程序完全解耦，意味着yarn上可以运行各种类型的分布式运算程序，比如 mapreduce、storm，spark，tez ……</li>
+<li>spark、storm 等运算框架都可以整合在 yarn 上运行，只要他们各自的框架中有符合yarn 规范的资源请求机制即可</li>
+<li>yarn 成为一个通用的资源调度平台.企业中以前存在的各种运算集群都可以整合在一个物理集群上，提高资源利用率，方便数据共享</li>
+</ul>
+</blockquote>
+<h4 id="yarn的基本架构"><a href="#yarn的基本架构" class="headerlink" title="yarn的基本架构"></a><strong>yarn的基本架构</strong></h4><p><img src="D:\自学\大数据\hadoop.assets\70-16553501916083.png" alt="这里写图片描述"></p>
+<h5 id="YARN三大模块"><a href="#YARN三大模块" class="headerlink" title="YARN三大模块"></a>YARN三大模块</h5><p>YARN 是一个资源管理、任务调度的框架，主要包含三大模块：ResourceManager（RM）、NodeManager（NM）、ApplicationMaster（AM）。</p>
+<p>对于所有的 applications，RM 拥有绝对的控制权和对资源的分配权。而每个 AM 则会和<br>RM 协商资源，同时和 NodeManager 通信来执行和监控 task。</p>
+<ul>
+<li><p>ResourceManager 负责所有资源的监控、分配和管理；</p>
+<blockquote>
+<ul>
+<li>ResourceManager 负责整个集群的资源管理和分配，是一个全局的资源管理系统。</li>
+<li>NodeManager 以心跳的方式向 ResourceManager 汇报资源使用情况（目前主要是 CPU 和内存的使用情况）。RM 只接受 NM 的资源回报信息，对于具体的资源处理则交给 NM 自己处理。</li>
+<li>YARN Scheduler 根据 application 的请求为其分配资源，不负责 application job 的监控、追踪、运行状态反馈、启动等工作。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>ApplicationMaster 负责每一个具体应用程序的调度和协调；</p>
+<blockquote>
+<ul>
+<li>用 户 提 交 的 每 个 应 用 程 序 均 包 含 一 个 ApplicationMaster ， 它 可 以 运 行 在ResourceManager 以外的机器上。</li>
+<li>负责与 RM 调度器协商以获取资源（用 Container 表示）。</li>
+<li>将得到的任务进一步分配给内部的任务(资源的二次分配)。</li>
+<li>与 NM 通信以启动&#x2F;停止任务。</li>
+<li>监控所有任务运行状态，并在任务运行失败时重新为任务申请资源以重启任务。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>NodeManager 负责每一个节点的维护。</p>
+<blockquote>
+<ul>
+<li>NodeManager 是每个节点上的资源和任务管理器，它是管理这台机器的代理，负责该节点程序的运行，以及该节点资源的管理和监控。YARN 集群每个节点都运行一个NodeManager。</li>
+<li>NodeManager 定时向 ResourceManager 汇报本节点资源（CPU、内存）的使用情况和Container 的运行状态。当 ResourceManager 宕机时NodeManager 自动连接 RM 备用节点。</li>
+<li>NodeManager 接收并处理来自 ApplicationMaster 的 Container 启动、停止等各种请求。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h4 id="YARN运行流程"><a href="#YARN运行流程" class="headerlink" title="YARN运行流程"></a>YARN运行流程</h4><img src="D:\自学\大数据\hadoop.assets\20180315005117211.jpeg" alt="这里写图片描述" style="zoom:67%;" />
+
+
+
+<p><img src="D:\自学\大数据\hadoop.assets\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NoZW5zaGVuZ3N1MTk5MA==,size_16,color_FFFFFF,t_70-16553561857229.png" alt="img"></p>
+<blockquote>
+<p>步骤1　用户向YARN中提交应用程序，其中包括ApplicationMaster程序、启动ApplicationMaster的命令、用户程序等。</p>
+<p>步骤2　ResourceManager为该应用程序分配第一个Container，并与对应的Node-Manager通信，要求它在这个Container中启动应用程序的ApplicationMaster。</p>
+<p>步骤3　ApplicationMaster首先向ResourceManager注册，这样用户可以直接通过ResourceManager查看应用程序的运行状态，然后它将为各个任务申请资源，并监控它的运行状态，直到运行结束，即重复步骤4~7。</p>
+<p>步骤4　ApplicationMaster采用轮询的方式通过RPC协议向ResourceManager申请和领取资源。</p>
+<p>步骤5　一旦ApplicationMaster申请到资源后，便与对应的NodeManager通信，要求它启动任务。</p>
+<p>步骤6　NodeManager为任务设置好运行环境（包括环境变量、JAR包、二进制程序等）后，将任务启动命令写到一个脚本中，并通过运行该脚本启动任务。</p>
+<p>步骤7　各个任务通过某个RPC协议向ApplicationMaster汇报自己的状态和进度，以让ApplicationMaster随时掌握各个任务的运行状态，从而可以在任务失败时重新启动任务。</p>
+<p>  在应用程序运行过程中，用户可随时通过RPC向ApplicationMaster查询应用程序的当前运行状态。</p>
+<p>步骤8　应用程序运行完成后，ApplicationMaster向ResourceManager注销并关闭自己。</p>
+</blockquote>
+<h4 id="Yarn调度器Scheduler"><a href="#Yarn调度器Scheduler" class="headerlink" title="Yarn调度器Scheduler"></a>Yarn调度器Scheduler</h4><blockquote>
+<p>理想情况下，我们应用对 Yarn 资源的请求应该立刻得到满足，但现实情况资源往往是有限的，特别是在一个很繁忙的集群，一个应用资源的请求经常需要等待一段时间才能的到相应的资源。在 n Yarn  中，负责给应用分配资源的就是  Scheduler。其实调度本身就是一个难题，很难找到一个完美的策略可以解决所有的应用场景。为此，Yarn 提供了多种调度器和可配置的策略供我们选择。在 Yarn 中有三种调度器可以选择：FIFO Scheduler ，Capacity Scheduler，FairScheduler。</p>
+</blockquote>
+<h5 id="FIFO调度器"><a href="#FIFO调度器" class="headerlink" title="FIFO调度器"></a>FIFO调度器</h5><blockquote>
+<p>FIFO Scheduler 把应用按提交的顺序排成一个队列，这是一个 先进先出队列，在进行资源分配的时候，先给队列中最头上的应用进行分配资源，待最头上的应用需求满足后再给下一个分配，以此类推。</p>
+</blockquote>
+<img src="D:\自学\大数据\hadoop.assets\70-165538421351711-165538421530814.png" alt="这里写图片描述" style="zoom:75%;" />
+
+<p>特点: FIFO Scheduler 是最简单也是最容易理解的调度器，也不需要任何配置，但它并不适<br>用于共享集群。大的应用可能会占用所有集群资源，这就导致其它应用被阻塞。在共享集群<br>中，更适合采用 Capacity Scheduler 或 Fair Scheduler，这两个调度器都允许大任务和小<br>任务在提交的同时获得一定的系统资源。</p>
+<h5 id="Capacity-Scheduler"><a href="#Capacity-Scheduler" class="headerlink" title="Capacity Scheduler"></a>Capacity Scheduler</h5><blockquote>
+<p>  Capacity 调度器允许多个组织共享整个集群，每个组织可以获得集群的一部分计算能<br>力。通过为每个组织分配专门的队列，然后再为每个队列分配一定的集群资源，这样整个集群就可以通过设置多个队列的方式给多个组织提供服务了。除此之外，队列内部又可以垂直划分，这样一个组织内部的多个成员就可以共享这个队列资源了，在一个队列内部，资源的调度是采用的是先进先出(FIFO)策略。</p>
+</blockquote>
+<img src="D:\自学\大数据\hadoop.assets\70-165538446236916.png" alt="这里写图片描述" style="zoom:75%;" />
+
+<h5 id="FairScheduler"><a href="#FairScheduler" class="headerlink" title="FairScheduler"></a>FairScheduler</h5><p>在 Fair 调度器中，我们不需要预先占用一定的系统资源，Fair 调度器会为所有运行的<br>job 动态的调整系统资源。如下图所示，当第一个大 job 提交时，只有这一个 job 在运行，<br>此时它获得了所有集群资源；当第二个小任务提交后，Fair 调度器会分配一半资源给这个<br>小任务，让这两个任务公平的共享集群资源。</p>
+<p>需要注意的是，在下图 Fair 调度器中，从第二个任务提交到获得资源会有一定的延迟，因为它需要等待第一个任务释放占用的 Container。小任务执行完成之后也会释放自<br>己占用的资源，大任务又获得了全部的系统资源。最终效果就是 Fair 调度器即得到了高的<br>资源利用率又能保证小任务及时完成。</p>
+<img src="D:\自学\大数据\hadoop.assets\70-165538449567419.png" alt="这里写图片描述" style="zoom:75%;" />
+
+
+
+<p><em>注意:调度器的使用是通过 yarn-site.xml 配置文件中的yarn.resourcemanager.scheduler.class 参数进行配置的， 默认采用 Capacity</em><br><em>Scheduler 调度器。</em></p>
+<h3 id="MapReduce"><a href="#MapReduce" class="headerlink" title="MapReduce"></a>MapReduce</h3><blockquote>
+<p>MapReduce是一个<strong>软件框架</strong>，基于该框架能够容易地编写应用程序，这些应用程序能够运行在由上千个商用机器组成的<strong>大集群</strong>上，并以一种<strong>可靠的，具有容错能力</strong>的方式<strong>并行地处理</strong>上TB级别的<strong>海量数据集</strong>。MapReduce是一种基于磁盘的分布式并行批处理计算模型，用于处理大数据量的计算。</p>
+</blockquote>
+<p>MapReduce的思想是<strong>分而治之</strong>,mapper负责分,reducer负责汇总.</p>
+<ul>
+<li><p>Mapper-将复杂任务分解为若干个”简单的任务”来处理,这里简单的任务: </p>
+<ol>
+<li>数据&#x2F;计算规模小</li>
+<li>就近计算原则:任务会分配到存放着所需数据的节点上进行计算</li>
+<li>小任务可以<strong>并行计算</strong>,彼此之间没有依赖关系</li>
+</ol>
+<p>对应数据集上的独立元素进行指定的操作，生成键-值对形式中间值.</p>
+<p>Map task：解析每条数据记录，传递给用户编写的map()函数并执行，将输出结果写入到本地磁盘（如果为map—only作业，则直接写入HDFS）。</p>
+</li>
+<li><p>Reducer-对map阶段的结果进行<strong>汇总</strong></p>
+<p>则对中间结果中相同的键的所有值进行规约，以得到最终结果。需要多少个Reducer，用户可以根据具体问题，通过在mapred-site.xml配置文件里设置参数mapred.<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=reduce&spm=1001.2101.3001.7020">reduce</a>.tasks的值，缺省值为1。</p>
+<p>Reduce task：从Map 执行结果中，远程读取输入数据，对数据进行排序，将数据分组传递给用户编写的Reduce()函数执行。</p>
+</li>
+</ul>
+<h4 id="框架组成"><a href="#框架组成" class="headerlink" title="框架组成"></a>框架组成</h4><p> 一个MapReduce作业通常会把输入的<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%95%B0%E6%8D%AE%E9%9B%86&spm=1001.2101.3001.7020">数据集</a>切分为若干独立的数据块，由Map任务以完全并行的方式去处理它们。</p>
+<p>​      框架会对Map的输出先进行排序，然后把结果输入给Reduce任务。通常作业的输入和输出都会被存储在文件系统中，整个框架负责任务的调度和监控，以及重新执行已经关闭的任务。</p>
+<p>​      通常，MapReduce框架和分布式文件系统是运行在一组相同的节点上，也就是说，计算节点和存储节点通常都是在一起的。这种配置允许框架在那些已经存好数据的节点上高效地调度任务，这可以使得整个集群的网络带宽被非常高效地利用。</p>
+<p>mapreduce工作过程中涉及到四个独立的实体:</p>
+<p><img src="D:\自学\大数据\hadoop.assets\121311236836173-165569663230817.png" alt="img"></p>
+<ul>
+<li><p>客户端: 提交mapreduce作业</p>
+</li>
+<li><p>Jobtracker：master节点，只有一个，管理所有作业，任务&#x2F;作业的监控，错误处理等，将任务分解成一系列任务，并分派给Tasktracker。JobTracker负责调度构成一个作业的所有任务，这些任务分布在不同的TaskTracker上（由上图的JobTracker可以看到2 assign map 和 3 assign reduce）。你可以将其理解为公司的项目经理，项目经理接受项目需求，并划分具体的任务给下面的开发工程师。</p>
+</li>
+<li><p>Tasktracker：slave节点，运行 Map task和Reduce task；并与Jobtracker交互，汇报任务状态。TaskTracker负责执行由JobTracker指派的任务，这里我们就可以将其理解为开发工程师，完成项目经理安排的开发任务即可。</p>
+</li>
+<li><p>hdfs: 文件存储</p>
+</li>
+</ul>
+<h5 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h5><p>​     MapReduce框架运转在**&lt;key,value&gt;**键值对上，也就是说，框架把作业的输入看成是一组&lt;key,value&gt;键值对，同样也产生一组&lt;key,value&gt;键值对作为作业的输出，这两组键值对有可能是不同的。框架中可存在combiner,一个combiner只处理一个节点的输出.</p>
+<p>例如:<strong>单词计数问题</strong></p>
+<p>mapper:</p>
+<p><img src="D:\自学\大数据\hadoop.assets\121403128869360-165570634968521.png" alt="img"></p>
+<p>　　reducer:</p>
+<p><img src="D:\自学\大数据\hadoop.assets\121414341362568-165570637530625.png" alt="img"></p>
+<h3 id="Zookeeper"><a href="#Zookeeper" class="headerlink" title="Zookeeper"></a>Zookeeper</h3><ul>
+<li><p>zookeeper主要<strong>服务于分布式系统</strong>，解决分布式环境下的数据管理问题：统一命名，状态同步，集群管理，配置同步，分布式锁等。</p>
+</li>
+<li><p>zookeeper是一个能够通用的解决分布式系统中节点统一管理问题的中间件</p>
+</li>
+<li><p>Hadoop的许多组件依赖于Zookeeper，它运行在计算机集群上面，用于管理Hadoop操作。</p>
+</li>
+</ul>
+<h4 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h4><p><strong>「顺序一致性」</strong>：从同一客户端发起的事务请求，最终将会严格地按照顺序被应用到 ZooKeeper 中去。</p>
+<p><strong>「原子性」</strong>：所有事务请求的处理结果在整个集群中所有机器上的应用情况是一致的，也就是说，要么整个集群中所有的机器都成功应用了某一个事务，要么都没有应用。</p>
+<p><strong>「单一视图」</strong>：无论客户端连到哪一个 ZooKeeper 服务器上，其看到的服务端数据模型都是一致的。</p>
+<p><strong>「可靠性：」</strong> 一旦服务端成功地应用了一个事务，并完成对客户端的响应，那么该事务所引起的服务端状态变更将会被一直保留下来。</p>
+<p><strong>「实时性（最终一致性）：」</strong> Zookeeper 仅仅能保证在一定的时间段内，客户端最终一定能够从服务端上读取到最新的数据状态。</p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><h5 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h5><p>zookeeper的数据结构与unix文件系统类似，可以看作是一棵树，每个节点叫做ZNode，每一个节点通过路径来标识。结构图如下：</p>
+<img src="D:\自学\大数据\hadoop.assets\v2-ddc7da9fd715c0906f38c5989e11118e_1440w-16551780112617.jpg" alt="img" style="zoom:50%;" />
+
+
+
+<p>ZNode分为四种类型：</p>
+<ul>
+<li>临时：当客户端和服务端断开连接后，所创建的Znode(节点)<strong>会自动删除</strong><ul>
+<li>临时节点</li>
+<li>临时顺序节点，增加了顺序性，父节点将维护一个自增的整型数字，用于标识子节点的创建先后</li>
+</ul>
+</li>
+<li>持久：当客户端和服务端断开连接后，所创建的Znode(节点)<strong>不会删除</strong><ul>
+<li>持久节点</li>
+<li>持久顺序节点</li>
+</ul>
+</li>
+</ul>
+<p>ZNode数据节点当中包含了<strong>「存储数据、访问权限、子节点引用、节点状态信息」</strong>，</p>
+<ul>
+<li>存储数据data：ZNode存储的业务数据信息</li>
+<li>访问权限ACL：客户端对ZNode节点的访问权限</li>
+<li>child子节点引用：当前节点的子节点引用</li>
+<li>stat节点状态信息：当前节点的状态信息，例如事务ID、版本号、时间戳</li>
+</ul>
+<p><em>Zookeeper分为客户端和服务端</em></p>
+<h5 id="监听机制"><a href="#监听机制" class="headerlink" title="监听机制"></a>监听机制</h5><blockquote>
+<p>Zookeeper 允许客户端向服务端的某个Znode注册一个Watcher监听，当服务端的一些指定事件触发了这个Watcher，服务端会向指定客户端发送一个事件通知来实现分布式的通知功能，然后客户端根据 Watcher通知状态和事件类型做出业务上的改变。</p>
+</blockquote>
+<p><strong>常见</strong>的监听场景有以下两项：</p>
+<ul>
+<li>监听Znode节点的<strong>数据变化</strong></li>
+<li>监听子节点的<strong>增减变化</strong></li>
+</ul>
+<p><strong>监听工作原理：</strong></p>
+<img src="D:\自学\大数据\hadoop.assets\b7003af33a87e9504901c6ec248efd44faf2b45d-165518958546231.jpeg" alt="img" style="zoom:50%;" />
+
+<ul>
+<li>ZooKeeper的Watcher机制主要包括客户端线程、客户端 WatcherManager、Zookeeper服务器三部分。</li>
+<li>客户端向ZooKeeper服务器注册Watcher的同时，会将Watcher对象存储在客户端的WatchManager中。</li>
+<li>当zookeeper服务器触发watcher事件后，会向客户端发送通知， 客户端线程从 WatcherManager 中取出对应的 Watcher 对象来执行回调逻辑。</li>
+</ul>
+<p><strong>watcher特性:</strong></p>
+<p><strong>「一次性:」</strong> 一个Watch事件是一个一次性的触发器。一次性触发，客户端只会收到一次这样的信息。</p>
+<p><strong>「异步的：」</strong> Zookeeper服务器发送watcher的通知事件到客户端是异步的，不能期望能够监控到节点每次的变化，Zookeeper只能保证最终的一致性，而无法保证强一致性。</p>
+<p><strong>「轻量级：」</strong> Watcher 通知非常简单，它只是通知发生了事件，而不会传递事件对象内容。</p>
+<p><strong>「客户端串行：」</strong> 执行客户端 Watcher 回调的过程是一个串行同步的过程。</p>
+<h5 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h5><h6 id="统一配置管理"><a href="#统一配置管理" class="headerlink" title="统一配置管理"></a>统一配置管理</h6><blockquote>
+<p>实际项目开发中，我们经常使用.properties或者xml需要配置很多信息，如数据库连接信息、fps地址端口等等。因为你的程序一般是分布式部署在不同的机器上（如果你是单机应用当我没说），如果把程序的这些配置信息<strong>「保存在zk的znode节点」</strong>下，当你要修改配置，即znode会发生变化时，可以通过改变zk中某个目录节点的内容，利用<strong>「watcher通知给各个客户端」</strong>，从而更改配置。</p>
+</blockquote>
+<p>例如，当我们现在有三个系统A、B、C，分别有三个配置文件。这三份配置文件十分类似，其中许多配置项一样。</p>
+<p>此时，若我们要改变其中一份的配置项信息，很有可能也需要同时修改其他两份的。并且，改变了配置项的系统需要重启。</p>
+<p>于是，我们将三份配置文件当中相同的配置项抽取出来作为一份公用的配置文件，这样当修改了公共配置的时候，也不需要重启ABC系统。</p>
+<img src="D:\自学\大数据\hadoop.assets\v2-2dfe4bb28b448c3a623deeda2cabecd8_1440w-165518792804011.jpg" alt="img" style="zoom:50%;" />
+
+<p><strong>做法：</strong>将common.yml文件放在zookeeper的ZNode节点当中，系统ABC对改节点进行监听，看其十分存在变更，当有变更时，及时响应。</p>
+<img src="D:\自学\大数据\hadoop.assets\v2-40a7b398992105e1b278fca39ba1338b_1440w-165518803981015.jpg" alt="img" style="zoom:33%;" />
+
+<h6 id="统一命名服务"><a href="#统一命名服务" class="headerlink" title="统一命名服务"></a>统一命名服务</h6><blockquote>
+<p>命名服务是指通过<strong>「指定的名字」</strong>来获取资源或者服务地址。Zookeeper可以创建一个<strong>「全局唯一的路径」</strong>，这个路径就可以作为一个名字。被命名的实体可以是<strong>「集群中的机器，服务的地址，或者是远程的对象」</strong>等。一些分布式服务框架（RPC、RMI）中的服务地址列表，通过使用命名服务，客户端应用能够根据特定的名字来获取资源的实体、服务地址和提供者信息等。</p>
+<p>同域名一样理解，即为某一部分资源取一个名字，别人通过这个名字就可以拿到相应的资源。</p>
+</blockquote>
+<img src="D:\自学\大数据\hadoop.assets\v2-4b86e886479dc91b9527f46fe125e45a_1440w-165518826968319.jpg" alt="img" style="zoom:50%;" />
+
+
+
+<h6 id="分布式锁"><a href="#分布式锁" class="headerlink" title="分布式锁"></a>分布式锁</h6><p>当系统ABC同时去访问&#x2F;locks节点时，在访问时，会创造带有<strong>顺序号的临时节点</strong>。</p>
+<p>例如：</p>
+<img src="D:\自学\大数据\hadoop.assets\v2-338b221850de334723018c9164804576_1440w-165518856191223.jpg" alt="img" style="zoom:67%;" />
+
+<p>系统A创建了<code>id_000000</code>节点，系统B创建了<code>id_000002</code>节点，系统C创建了<code>id_000001</code>节点。</p>
+<p>接着，拿到<code>/locks</code>节点下的所有子节点(id_000000,id_000001,id_000002)，<strong>判断自己创建的是不是最小的那个节点</strong></p>
+<ul>
+<li><p>如果是，则拿到锁。</p>
+</li>
+<li><ul>
+<li>释放锁：执行完操作后，把创建的节点给删掉</li>
+</ul>
+</li>
+<li><p>如果不是，则监听比自己要小1的节点变化</p>
+</li>
+</ul>
+<p>具体实例如下：</p>
+<ul>
+<li>系统A拿到<code>/locks</code>节点下的所有子节点，经过比较，发现自己(<code>id_000000</code>)，是所有子节点最小的。所以得到锁</li>
+<li>系统B拿到<code>/locks</code>节点下的所有子节点，经过比较，发现自己(<code>id_000002</code>)，不是所有子节点最小的。所以监听比自己小1的节点<code>id_000001</code>的状态</li>
+<li>系统C拿到<code>/locks</code>节点下的所有子节点，经过比较，发现自己(<code>id_000001</code>)，不是所有子节点最小的。所以监听比自己小1的节点<code>id_000000</code>的状态</li>
+<li>……</li>
+<li>等到系统A执行完操作以后，将自己创建的节点删除(<code>id_000000</code>)。通过监听，系统C发现<code>id_000000</code>节点已经删除了，发现自己已经是最小的节点了，于是顺利拿到锁</li>
+<li>….系统B如上</li>
+</ul>
+<h6 id="集群状态"><a href="#集群状态" class="headerlink" title="集群状态"></a>集群状态</h6><blockquote>
+<p>集群管理包括集群监控和集群控制，其实就是监控集群机器状态，剔除机器和加入机器。zookeeper可以方便集群机器的管理，它可以实时监控znode节点的变化，一旦发现有机器挂了，该机器就会与zk断开连接，对用的临时目录节点会被删除，其他所有机器都收到通知。新机器加入也是类似酱紫，所有机器收到通知：有新兄弟目录加入啦。</p>
+</blockquote>
+<p>当要在zookeeper中感知节点的动态新增及删除时，在zookeeper中创建临时节点即可。</p>
+<img src="D:\自学\大数据\hadoop.assets\v2-64f633e7f829b5daeedf5e4d116972bc_1440w-165518882333327.jpg" alt="img" style="zoom:50%;" />
+
+<p>只要系统A挂了，那<code>/groupMember/A</code>这个节点就会删除，通过<strong>监听</strong><code>groupMember</code>下的子节点，系统B和C就能够感知到系统A已经挂了。(新增也是同理)</p>
+<p>除了能够感知节点的上下线变化，ZooKeeper还可以实现<strong>动态选举Master</strong>的功能。(如果集群是主从架构模式下)</p>
+<p>原理也很简单，如果想要实现动态选举Master的功能，Znode节点的类型是带<strong>顺序号的临时节点</strong>(<code>EPHEMERAL_SEQUENTIAL</code>)就好了。</p>
+<ul>
+<li>Zookeeper会每次选举最小编号的作为Master，如果Master挂了，自然对应的Znode节点就会删除。然后让<strong>新的最小编号作为Master</strong>，这样就可以实现动态选举的功能了。</li>
+</ul>
+<h3 id="Spark"><a href="#Spark" class="headerlink" title="Spark"></a>Spark</h3><p>Spark是一种基于内存的分布式并行计算框架（分布式资源工作交给集群管理软件-yarn），不同于MapReduce的是——Job中间输出结果可以保存在内存中，从而不再需要读写HDFS，因此Spark能更好地适用于数据挖掘与机器学习等需要迭代的MapReduce的算法。</p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ol>
+<li>先进架构<ul>
+<li>Spark采用Scala语言编写，底层采用了actor model的akka作为通讯框架，代码十分简洁高效。</li>
+<li>基于DAG图的执行引擎，减少多次计算之间中间结果写到Hdfs的开销。</li>
+<li>建立在统一抽象的RDD（分布式内存抽象）之上,使得它可以以基本一致的方式应对不同的大数据处理场景</li>
+</ul>
+</li>
+<li>高效<ul>
+<li>提供Cache机制来支持需要反复迭代的计算或者多次数据共享，减少数据读取的IO开销。</li>
+<li>与Hadoop的MapReduce相比，Spark基于内存的运算比MR要快100倍；而基于硬盘的运算也要快10倍！</li>
+</ul>
+</li>
+<li>易用<ul>
+<li>Spark提供广泛的数据集操作类型（20+种），不像Hadoop只提供了Map和Reduce两种操作。</li>
+<li>Spark支持Java，Python和Scala API，支持交互式的Python和Scala的shell。</li>
+</ul>
+</li>
+<li>提供整体解决方案<ul>
+<li>以其RDD模型的强大表现能力，逐渐形成了一套自己的生态圈，提供了full-stack的解决方案。</li>
+<li>主要包括Spark内存中批处理，Spark SQL交互式查询，Spark Streaming流式计算， GraphX和MLlib提供的常用图计算和机器学习算法。</li>
+</ul>
+</li>
+<li>与hadoop无缝连接<ul>
+<li>Spark可以使用YARN作为它的集群管理器</li>
+<li>读取HDFS,HBase等一切Hadoop的数据</li>
+</ul>
+</li>
+</ol>
+<h4 id="整体架构"><a href="#整体架构" class="headerlink" title="整体架构"></a>整体架构</h4><p><img src="D:\自学\大数据\hadoop.assets\70-16557990058663.jpeg" alt="Spark整体架构"></p>
+<p>Spark提供了多种高级工具，如： Shark SQL应用于即席查询（Ad-hoc query）、Spark Streaming应用于流式计算、 MLlib应用于机器学习、GraphX应用于图处理。Spark还可以基于自带的standalone集群管理器独立运行，也可以部署在Apache Mesos 和 Hadoop YARN 等集群管理器上运行。Spark可以访问存储在HDFS、 Hbase、Cassandra、Amazon S3、本地文件系统等等上的数据，Spark支持文本文件，序列文件，以及任何Hadoop的InputFormat。</p>
+<ul>
+<li>Spark Core：包含Spark的基本功能；尤其是定义RDD的API、操作以及这两者上的动作。其他Spark的库都是构建在RDD和Spark Core之上的。</li>
+<li>Spark将数据抽象为RDD（弹性分布式数据集），内部提供了大量的库，包括Spark Core、Spark SQL、Spark Streaming、MLlib、GraphX。 开发者可以在同一个应用程序中无缝组合使用这些库。。</li>
+</ul>
+<p><strong>Spark之上提供了四种应用库：</strong></p>
+<ul>
+<li><p>Spark SQL：提供通过Apache Hive的SQL变体Hive查询语言（HiveQL）与Spark进行交互的API。每个数据库表被当做一个RDD，Spark SQL查询被转换为Spark操作。</p>
+</li>
+<li><p>Spark Streaming：对实时数据流进行处理和控制。Spark Streaming允许程序能够像普通RDD一样处理实时数据，通过短时批处理实现的伪流处理。</p>
+</li>
+<li><p>MLlib：一个常用机器学习算法库，算法被实现为对RDD的Spark操作。这个库包含可扩展的学习算法，比如分类、回归等需要对大量数据集进行迭代的操作。</p>
+</li>
+<li><p>GraphX：控制图、并行图操作和计算的一组算法和工具的集合。GraphX扩展了RDD API，包含控制图、创建子图、访问路径上所有顶点的操作</p>
+</li>
+</ul>
+<h4 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h4><p>Spark任务提供多层分解的概念，Spark组件将用户的应用程序分解为内部执行任务并提供执行容器，资源管理为spark组件提供资源管理和调度。</p>
+<h5 id="spark任务"><a href="#spark任务" class="headerlink" title="spark任务"></a>spark任务</h5><ul>
+<li>应用程序：由一个driver program和多个job构成</li>
+<li>job：由多个stage组成</li>
+<li>stage：对应一个taskset</li>
+<li>taskset：对应一组关联的相互之间没有shuffle依赖关系的task组成。</li>
+<li>task：任务最小的工作单元</li>
+</ul>
+<img src="D:\自学\大数据\hadoop.assets\70-16557993685915-16557993701288.jpeg" alt="Spark任务" style="zoom:50%;" />
+
+<h5 id="spark组件"><a href="#spark组件" class="headerlink" title="spark组件"></a>spark组件</h5><ul>
+<li>Driver Program (驱动程序) ：Spark 的核心组件<ul>
+<li>构建SparkContext(Spark应用的入口,它负责和整个集群的交互，创建需要的变量，还包含集群的配置信息等)</li>
+<li>将用户提交的job转换为DAG图(类似数据处理的流程图)</li>
+<li>根据策略将DAG图划分为多个stage，根据分区从而生成一系列tasks</li>
+<li>根据tasks要求向资源管理器申请资源</li>
+<li>提交任务并检测任务状态</li>
+</ul>
+</li>
+<li>Executor<ul>
+<li>真正执行task的单元，是为某个Application运行在worker node上的一个进程，一个Worker Node上可以有多个Executor</li>
+</ul>
+</li>
+</ul>
+<p><strong>资源管理组件</strong></p>
+<ul>
+<li>YARN（通用）：Master&#x2F;Slave结构<ul>
+<li>Resource Manager(RM)：全局的资源管理器，负责系统的资源管理和分配</li>
+<li>Node Manager(NM)：每个节点上的资源和任务管理器</li>
+<li>Application Master(AM)：每个应用程序都有一个，负责任务的调度和监视，并与RM调度器协商为任务获取资源。</li>
+</ul>
+</li>
+<li>Standalone（Spark自带）：Master&#x2F;Slave结构<ul>
+<li>Master：类似于YARN的RM，控制整个集群，监控worker。</li>
+<li>Worker：类似于YARN的NM，从节点，负责控制计算节点，启动Executor或者Driver。</li>
+</ul>
+</li>
+</ul>
+<h4 id="spark流程"><a href="#spark流程" class="headerlink" title="spark流程"></a>spark流程</h4><p>Spark的<strong>Driver Program</strong> (简称Driver)包含用户的应用程序，Driver完成task的解析和生成。driver可以运行在worker上也可以运行在client上。</p>
+<h5 id="driver运行在client上"><a href="#driver运行在client上" class="headerlink" title="driver运行在client上"></a>driver运行在client上</h5><ol>
+<li>Driver向Cluster Manager（集群资源管理器）申请运行task需要的资源。</li>
+<li>集群资源管理器为task分配满足要求的节点，并在节点按照要求创建Executor</li>
+<li>创建的Executor向Driver注册。</li>
+<li>Driver将Spark应用程序的代码和文件传送给分配的Executor</li>
+<li>Executor运行task，运行完之后将结果返回给Driver或者写入HDFS或其他介质。</li>
+</ol>
+<p><img src="D:\自学\大数据\hadoop.assets\70-165580105813215-165580105962818.jpeg" alt="Driver运行在Client"></p>
+<h5 id="driver运行在worker上"><a href="#driver运行在worker上" class="headerlink" title="driver运行在worker上"></a>driver运行在worker上</h5><ol>
+<li>客户端把作业发布到Master</li>
+<li>Master让一个Worker启动Driver，并将作业推送给Driver</li>
+<li>Driver进程生成一系列task</li>
+<li>Driver向Master申请资源</li>
+<li>Master让调度的Worker启动Exeuctor</li>
+<li>Exeuctor启动后向Driver注册。</li>
+<li>Driver将task调度到Exeuctor执行。</li>
+<li>Executor执行结果写入文件或返回Driver</li>
+</ol>
+<p><img src="D:\自学\大数据\hadoop.assets\70-165580110678520-165580110863223.jpeg" alt="Driver运行在Worker"></p>
+<h4 id="spark核心组件"><a href="#spark核心组件" class="headerlink" title="spark核心组件"></a>spark核心组件</h4><img src="D:\自学\大数据\hadoop.assets\70-165580124250425-165580124402928.png" alt="Spark的核心组件" style="zoom:50%;" />
+
+
+
+<p>Spark的核心组件包括RDD、Scheduler、Storage、Shuffle四部分：</p>
+<ul>
+<li>RDD是Spark最核心最精髓的部分，Spark将所有数据都抽象成RDD。</li>
+<li>Scheduler是Spark的调度机制，分为DAGScheduler和TaskScheduler。</li>
+<li>Storage模块主要管理缓存后的RDD、shuffle中间结果数据和broadcast数据</li>
+<li>Shuffle分为Hash方式和Sort方式，两种方式的shuffle中间数据都写本地盘</li>
+</ul>
+<h5 id="RDD-Resilient-Distributed-Datasets"><a href="#RDD-Resilient-Distributed-Datasets" class="headerlink" title="RDD(Resilient Distributed Datasets)"></a>RDD(Resilient Distributed Datasets)</h5><blockquote>
+<p>RDD是弹性分布式数据集，是只读的分区记录集合。</p>
+</blockquote>
+<p>每个RDD有5个主要的属性：</p>
+<ul>
+<li>一组分片(Partition)：数据集的最基本组成单位</li>
+<li>一个计算每个分片的函数：对于给定的数据集，需要做哪些计算</li>
+<li>依赖（Dependencies）：RDD的依赖关系，描述了RDD之间的lineage</li>
+<li>preferredLocations（可选）：对于data partition的位置偏好</li>
+<li>partitioner（可选）：对于计算出来的数据结果如何分发</li>
+</ul>
+<p>作用于RDD上的Operation分为转换(transformantion)和动作(action)。 Spark中的所有“转换”都是惰性的，在执行“转换”操作，并不会提交Job，只有在执行“动作”操作，所有operation才会被提交到cluster中真正的被执行。这样可以大大提升系统的性能。</p>
+<ul>
+<li>转换：从现有的数据集创建一个新的数据集即数据集中的内容会发生更改，由数据集A转换成为数据集B</li>
+<li>动作：在数据集上运行计算后，返回一个值给驱动程序。 即数据集中的内容会被归约为一个具体的数值（Scala标量、集合类型的数据或存储）。</li>
+</ul>
+<p>RDD拥有的操作比MR丰富的多，不仅仅包括Map、Reduce操作，还包括filter、sort、join、save、count等操作，所以Spark比MR更容易方便完成更复杂的任务。</p>
+<h6 id="RDD持久化"><a href="#RDD持久化" class="headerlink" title="RDD持久化"></a>RDD持久化</h6><p>默认情况下，每一个转换过的RDD都会在它之上执行一个动作时被重新计算。如果RDD只被使用一次或者很少次，不需要持久化。如果RDD被重复使用或者计算其代价很高，才考虑持久化。另外，shuffle后生成的RDD尽量持久化，因为shuffle代价太高。RDD被缓存后，Spark将会在集群中，保存相关元数据，下次查询这个RDD时，它将能更快速访问，不需要计算。如果持久化无谓的RDD，会浪费内存（或硬盘）空间，反而降低系统整体性能</p>
+<h6 id="RDD依赖关系"><a href="#RDD依赖关系" class="headerlink" title="RDD依赖关系"></a>RDD依赖关系</h6><p>RDD只能基于在稳定物理存储中的数据集和其他已有的RDD上执行确定性操作来创建。能从其他RDD通过确定操作创建新的RDD的原因是RDD含有从其他RDD衍生（即计算）出本RDD的相关信息（即Lineage）。Dependency代表了RDD之间的依赖关系，即血缘（Lineage），分为窄依赖和宽依赖：</p>
+<img src="D:\自学\大数据\hadoop.assets\70-165580272685630.jpeg" alt="窄依赖和宽依赖" style="zoom:50%;" />
+
+<ul>
+<li>窄依赖：一个父RDD最多被一个子RDD用在一个集群节点上管道式执行。比如map、filter、union等</li>
+<li>宽依赖：子RDD的分区依赖于父RDD的所有分区，这是因为shuffle类操作要求所有父分区可用。比如groupByKey、reduceByKey、 sort、partitionBy等</li>
+</ul>
+<p>根据RDD依赖关系的不同，Spark将每一个job分为不同的stage，stage之间的依赖关系形成了DAG图。对于窄依赖，Spark将其尽量划分在同一个stage中，因为它们可以进行流水线计算，而宽依赖往往意味着shuffle操作，这也是Spark划分stage的主要边界。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\70-165580276315033-165580276504236.png" alt="RDD依赖关系"></p>
+<h5 id="scheduler"><a href="#scheduler" class="headerlink" title="scheduler"></a>scheduler</h5><p>Scheduler模块作为Spark最核心的模块之一，充分体现了Spark与MapReduce的不同之处，体现了Spark DAG思想的精巧和设计的优雅。Scheduler模块分为两大主要部分，DAGScheduler和TaskScheduler。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\70-165580286483138.png" alt="Scheduler"></p>
+<p>DAGScheduler把一个spark作业转换成stage的DAG（Directed Acyclic Graph有向无环图），根据RDD和stage之间的关系，找出开销最小的调度方法，然后把stage以TaskSet的形式提交给TaskScheduler。</p>
+<p>TaskScheduler模块用于与DAGScheduler交互，负责任务的具体调度和运行。任务调度模块基于两个Trait：TaskScheduler和 SchedulerBackend。</p>
+<h5 id="storage"><a href="#storage" class="headerlink" title="storage"></a>storage</h5><p>Storage模块主要分为两层：</p>
+<ul>
+<li>通信层：Storage模块采用的是master-slave结构来实现通信层，master和slave之间传输控制信息、状态信息，这些都是通过通信层来实现的。</li>
+<li>存储层：Storage模块需要把数据存储到disk或是memory上面，有可能还需replicate到远端，这都是由存储层来实现和提供相应接口。</li>
+</ul>
+<p>Storage模块提供了统一的操作类BlockManager，外部类与storage模块打交道都需要通过调用BlockManager相应接口来实现。Storage模块存取的最小单位是数据块(Block)，Block与RDD中的Partition一一对应，所以所有的转换或动作操作最终都是对Block进行操作。</p>
+<h5 id="shuffle"><a href="#shuffle" class="headerlink" title="shuffle"></a>shuffle</h5><p>Shuffle 中Map任务产生的结果会根据所设置的partitioner算法填充到当前执行任务所在机器的每个桶中。Reduce任务启动时时，会根据任务的ID，所依赖的Map任务ID以及MapStatus从远端或本地的BlockManager获取相应的数据作为输入进行处理。Shuffle数据必须持久化磁盘，不能缓存在内存。</p>
+<h3 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h3><blockquote>
+<p>hive是基于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Hadoop/3526507">Hadoop</a>的一个<strong>数据仓库</strong>工具，用来进行数据提取、转化、加载，这是一种可以存储、查询和分析存储在Hadoop中的大规模数据的机制。<strong>hive数据仓库工具能将结构化的数据文件映射为一张数据库表，并提供<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/SQL/86007">SQL</a>查询功能，能将<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/SQL%E8%AF%AD%E5%8F%A5/5714895">SQL语句</a>转变成<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/MapReduce/133425">MapReduce</a>任务来执行。</strong>Hive的优点是学习成本低，可以通过类似SQL语句实现快速MapReduce统计，使MapReduce变得更加简单，而不必开发专门的MapReduce应用程序。hive十分适合对数据仓库进行统计分析。</p>
+<p>Hive定义了一种类似SQL的查询语言(HQL),HQL用于运行存储在Hadoop上的查询语句，Hive让不熟悉MapReduce开发人员也能编写数据查询语句，然后这些语句被翻译为Hadoop上面的MapReduce任务。</p>
+<p><strong>本质是：</strong>将HQL转化为MapReduce程序</p>
+</blockquote>
+<p><img src="D:\自学\大数据\hadoop.assets\a597bd81cd78944ba3f71408562889f4-16562266295433.png" alt="image-20200916135459253"></p>
+<p>1）Hive处理的数据存储在HDFS</p>
+<p>2）Hive分析数据底层的实现是MapReduce</p>
+<p>3）执行程序运行在Yarn上</p>
+<p>hive不适合用于联机(online)事务处理，也不提供实时查询功能。它<strong>最适合应用在基于大量不可变数据的批处理作业</strong>。</p>
+<p>hive的特点包括：可伸缩（在Hadoop的集群上动态添加设备）、可扩展、容错、输入格式的松散耦合。</p>
+<p>hive 构建在基于静态批处理的Hadoop 之上，Hadoop 通常都有较高的延迟并且在作业提交和调度的时候需要大量的开销。因此，hive 并不能够在大规模数据集上实现低延迟快速的查询，例如，hive 在几百MB 的数据集上执行查询一般有分钟级的时间延迟。</p>
+<p>总结来说，<strong>Hive的优缺点</strong>如下：</p>
+<p>优点</p>
+<ul>
+<li>操作接口采用类SQL语法，提供快速开发的能力（简单、容易上手）。</li>
+<li>避免了去写MapReduce，减少开发人员的学习成本。</li>
+<li>Hive的执行延迟比较高，因此Hive常用于数据分析，对实时性要求不高的场合。</li>
+<li>Hive优势在于处理大数据，对于处理小数据没有优势，因为Hive的执行延迟比较高</li>
+<li>Hive支持用户自定义函数，用户可以根据自己的需求来实现自己的函数。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>Hive的HQL表达能力有限</p>
+<ul>
+<li><p>迭代式算法无法表达</p>
+</li>
+<li><p>数据挖掘方面不擅长</p>
+</li>
+</ul>
+</li>
+<li><p>Hive的效率比较低</p>
+<ul>
+<li><p>Hive自动生成的MapReduce作业，通常情况下不够智能化</p>
+</li>
+<li><p>Hive调优比较困难，粒度较粗</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="框架原理"><a href="#框架原理" class="headerlink" title="框架原理"></a>框架原理</h4><p><img src="D:\自学\大数据\hadoop.assets\e0f6a389ede3f8452580243d0c48b45e-16562271834047.png" alt="img"></p>
+<ol>
+<li><p>用户接口：Client</p>
+<p>CLI（hive shell）、JDBC&#x2F;ODBC(java访问hive)、WEBUI（浏览器访问hive）</p>
+</li>
+<li><p>元数据：Metastore</p>
+<p>元数据，数据的数据，比如某个表的元数据，包括表名、表所属的数据库（默认是default）、表的类型、表的数据目录、表的拥有者、列&#x2F;分区字段等；</p>
+<p>默认存储在自带的derby数据库中，推荐使用MySQL存储Metastore</p>
+</li>
+<li><p>Hadoop</p>
+<p>使用HDFS进行存储，使用MapReduce进行计算。</p>
+</li>
+<li><p>驱动器：Driver</p>
+<ul>
+<li>解析器（SQL Parser）：将SQL字符串转换成抽象语法树AST，这一步一般都用第三方工具库完成，比如antlr；对AST进行语法分析，比如表是否存在、字段是否存在、SQL语义是否有误。</li>
+<li>编译器（Physical Plan）：将AST编译生成逻辑执行计划。</li>
+<li>优化器（Query Optimizer）：对逻辑执行计划进行优化。</li>
+<li>执行器（Execution）：把逻辑执行计划转换成可以运行的物理计划。对于Hive来说，就是MR&#x2F;Spark。</li>
+</ul>
+</li>
+</ol>
+<p><strong>运行机制</strong></p>
+<p><img src="D:\自学\大数据\hadoop.assets\88105975376b1386b00e273072e07303-165622733506611.png" alt="image-20200916140721644"></p>
+<p>当创建表的时候，需要指定HDFS文件路径，表和其文件路径会保存到MetaStore，从而建立表和数据的映射关系。当数据加载如表时，根据映射获取到对应的HDFS路径，将数据导入。</p>
+<p>Hive通过给用户提供的一系列交互接口，接收到用户的指令(SQL)，使用自己的Driver，结合元数据(MetaStore)，将这些指令翻译成MapReduce，提交到Hadoop中执行，最后，将执行返回的结果输出到用户交互接口。</p>
+<h3 id="HBase"><a href="#HBase" class="headerlink" title="HBase"></a>HBase</h3><blockquote>
+<p><strong>HBase 是一种分布式、可扩展、支持海量数据存储的 NoSQL 数据库。</strong></p>
+<p>HBase 底层存储基于 HDFS 实现，集群的管理基于 ZooKeeper 实现。HBase 良好的分布式架构设计为海量数据的快速存储、随机访问提供了可能，基于数据副本机制和分区机制可以轻松实现在线扩容、缩容和数据容灾，是大数据领域中 Key-Value 数据结构存储最常用的数据库方案。</p>
+<p> HBase是<strong>面向列的</strong>针对结构化数据的可伸缩、高可靠、高性能、分布式的动态模式数据库。</p>
+<p>HBase采用了BigTable的数据模型：增强的稀疏排序映射表（Key&#x2F;Value），其中，键由行关键字、列关键字和时间戳构成。</p>
+<p>HBase提供了对大规模数据的随机、实时读写访问，同时，HBase中保存的数据可以使用MapReduce来处理，它将数据存储和并行计算完美地结合在一起。</p>
+</blockquote>
+<h4 id="HBase特点"><a href="#HBase特点" class="headerlink" title="HBase特点"></a>HBase特点</h4><ul>
+<li><p>易拓展</p>
+<p>Hbase 的扩展性主要体现在两个方面，一个是基于运算能力（RegionServer） 的扩展，通过增加 RegionSever 节点的数量，提升 Hbase 上层的处理能力；另一个是基于存储能力的扩展（HDFS），通过增加 DataNode 节点数量对存储层的进行扩容，提升 HBase 的数据存储能力。</p>
+</li>
+<li><p>海量存储</p>
+<p>HBase 作为一个开源的分布式 Key-Value 数据库，其主要作用是面向 PB 级别数据的实时入库和快速随机访问。这主要源于上述易扩展的特点，使得 HBase 通过扩展来存储海量的数据。</p>
+</li>
+<li><p>列式存储</p>
+<p>Hbase 是根据列族来存储数据的。列族下面可以有非常多的列。列式存储的最大好处就是，其数据在表中是按照某列存储的，这样在查询只需要少数几个字段时，能大大减少读取的数据量。</p>
+</li>
+<li><p>高可靠性</p>
+<p>WAL（WAL(Write Ahead Log)预写日志，是数据库系统中常见的一种手段，用于保证数据操作的原子性和持久性。）机制保证了数据写入时不会因集群异常而导致写入数据丢失，Replication 机制保证了在集群出现严重的问题时，数据不会发生丢失或损坏。而且 Hbase 底层使用 HDFS，HDFS 本身也有备份。</p>
+</li>
+<li><p>稀疏性</p>
+<p>在 HBase 的列族中，可以指定任意多的列，为空的列不占用存储空间，表可以设计得非常稀疏。</p>
+</li>
+</ul>
+<h4 id="架构组成"><a href="#架构组成" class="headerlink" title="架构组成"></a>架构组成</h4><img src="D:\自学\大数据\hadoop.assets\v2-d40578939c5946fa15ab1303688dbee0_1440w.jpg" alt="img" style="zoom:67%;" />
+
+<p>HBase 可以将数据存储在本地文件系统，也可以存储在 HDFS 文件系统。在生产环境中，HBase 一般运行在 HDFS 上，以 HDFS 作为基础的存储设施。HBase 通过 HBase Client 提供的 Java API 来访问 HBase 数据库，以完成数据的写入和读取。HBase 集群主由HMaster、Region Server 和 ZooKeeper 组成。</p>
+<h5 id="HBase-Client"><a href="#HBase-Client" class="headerlink" title="HBase Client"></a>HBase Client</h5><p>HBase Client 为用户提供了访问 HBase 的接口，可以通过元数据表来定位到目标数据的 RegionServer，另外 HBase Client 还维护了对应的 cache 来加速 Hbase 的访问，比如缓存元数据的信息。</p>
+<h5 id="HMaster-作为HBase集群的主节点"><a href="#HMaster-作为HBase集群的主节点" class="headerlink" title="HMaster-作为HBase集群的主节点"></a>HMaster-作为HBase集群的主节点</h5><ul>
+<li>负责管理 RegionServer，实现其负载均衡；</li>
+<li>管理和分配 Region，比如在 Region split时分配新的 Region，在 RegionServer 退出时迁移其内的 Region 到其他 RegionServer上；</li>
+<li>管理namespace和table的元数据（实际存储在HDFS上）；</li>
+<li>权限控制（ACL）；</li>
+<li>进行表的操作：create、delete、alter table（负责ddl操作）</li>
+</ul>
+<h5 id="Region-Server-直接对接用户的读写请求"><a href="#Region-Server-直接对接用户的读写请求" class="headerlink" title="Region Server-直接对接用户的读写请求"></a>Region Server-直接对接用户的读写请求</h5><ul>
+<li>作为region管理者，存放和管理本地的region</li>
+<li>读写HDFS，管理table中的数据，进行数据的操作：get、put、delete（负责dml操作）</li>
+<li>对region进行操作：splitRegion、compactRegion</li>
+<li>Client从HMaster中获取元数据，找到Rowkey所在的RegionServer进行数据读写</li>
+</ul>
+<h5 id="ZooKeeper"><a href="#ZooKeeper" class="headerlink" title="ZooKeeper"></a>ZooKeeper</h5><p>HBase 通过 Zookeeper 来做 Master 的高可用、RegionServer 的监控、元数据的入口以及 集群配置的维护等工作。主要工作职责如下：</p>
+<ul>
+<li>选举HMaster：通ZooKeeper来保证集中有1HMaster在运行，如果 HMaster 异常，则会通过选举机制产生新的 HMaster 来提供服务；</li>
+<li>监控Region Server: 通过 ZooKeeper 来监控 Region Server 的状态，当Region Server 有异常的时候，通过回调的形式通知 HMaster 有关Region Server 上下线的信息；</li>
+<li>维护元数据和集群配置：通过ZooKeeper储B信息并对外提供访问接口。</li>
+</ul>
+<h4 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h4><p>HBase 是一个<strong>面向列式存储</strong>、<strong>键值存储</strong>的分布式数据库。HBase 的数据模型与 BigTable 十分相似。在 HBase 表中，一条数据拥有一个全局唯一的键(RowKey)和任意数量的列(Column)，一列或多列组成一个列族(Column Family)，同一个列族中列的数据在物理上都存储在同一个 HFile 中，这样基于列存储的数据结构有利于数据缓存和查询。 HBase 中的表是疏松地存储的，因此用户可以动态地为数据定义各种不同的列。HBase中的数据按主键排序，同时，<strong>HBase 会将表按主键划分为多个 Region 存储在不同 Region Server 上</strong>，以完成数据的分布式存储和读取。</p>
+<p>HBase 根据列族来存储数据，一个列族对应物理存储上的一个 HFile，列族包含多列列族，在创建表的时候被指定。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\v2-fbddb0ed0a4de1cc5d3bab28ace34f12_720w-16563159358145.jpg" alt="img"></p>
+<p><strong>column family</strong></p>
+<p>列族。一个列族可以包含任意多列。一般同一类的列会放在一个列族中，每个列族都有一组存储属性：</p>
+<ul>
+<li>是否要缓存在内存中</li>
+<li>数据如何被压缩&#x2F;行键如何编码</li>
+</ul>
+<p>HBase在创建表的时候就必须指定列族，列族不是越多越好。（官方建议一个表的列族最好小于等于三个，过多列族不利于HBase数据的管理和索引）</p>
+<p><strong>rowkey</strong></p>
+<p>HBase使用rowkey来唯一标识某行数据。</p>
+<p>三种方式访问HBase数据：</p>
+<ul>
+<li>基于rowkey的单行查询</li>
+<li>基于rowkey的范围查询</li>
+<li>全表扫描查询</li>
+</ul>
+<p><strong>region</strong></p>
+<p>HBase 将表中的数据基于 RowKey 的不同范围划分到不同 Region 上，每个Region都负责一定范围的数据存储和访问。</p>
+<p>每个表一开始只有一个 Region，随着数据不断插入表，Region 不断增大，当增大到一个阀值的时候，Region 就会等分成两个新的 Region。当table中的行不断增多，就会有越来越多的 Region。</p>
+<p>另外，Region 是 Hbase 中分布式存储和负载均衡的最小单元，不同的 Region 可以分布在不同的 HRegion Server上。但一个Hregion是不会拆分到多个server上的。 </p>
+<p>这样即使有一个包括上百亿条数据的表，由于数据被划分到不同的 Region上，每个 Region 都可以独立地进行写入和查询，HBase 写查询时候可以于多 Region 分布式并发操作，因此访问速度也不会有太大的降低。</p>
+<p><strong>timestamp</strong></p>
+<p><strong>标识数据的不同版本</strong>，每条数据写入的时候，如果不指定时间戳，系统会自动为其加上该字段（值为写入HBase的时间）</p>
+<p>timestamp是实现HBase多版本的关键。相同 RowKey的数据按照 TimeStamp 倒序排列。默认查询的是最新的版本，当然用户也可以指定 TimeStamp 的值来读取指定版本的数据。</p>
+<p><strong>row</strong></p>
+<p>HBase中每行数据都由一个rowkey和多个列组成。数据按照rowkey的字典顺序存储，并且查询数据时只能根据rowkey进行检索。因此rowkey的设计十分重要。</p>
+<h3 id="列式存储格式"><a href="#列式存储格式" class="headerlink" title="列式存储格式"></a>列式存储格式</h3><h4 id="列式存储与行式存储"><a href="#列式存储与行式存储" class="headerlink" title="列式存储与行式存储"></a>列式存储与行式存储</h4><p>行式存储（Row-oriented）、列式存储（Column-oriented）是两个重要的数据组织方式，列存的有<code>parquet</code>， <code>ORC</code>；行存的则有Avro，JSON，CSV，Text。</p>
+<p>示例如下：</p>
+<p><img src="D:\自学\大数据\hadoop.assets\0df431adcbef7609a790713997b351c47dd99e71.png" alt="img"></p>
+<p>上表中，如果用列存和行存存储会得到下面两种不同的组织方式。在左边的列存中，<code>同一列的数据被组织在一起</code>，当一列数据存储完毕时，接着下一列的数据存放，直到数据全部存好；而在行存中，数据按照行的顺序依次放置，<code>同一行中包括了不同列的一个数据</code>，在图中通过不同的颜色标识了数据的排列方法。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\1f178a82b9014a9000bd10f51019cb1ab21bee6b.png" alt="img"></p>
+<p>如果使用列存去处理下面的查询，可以发现它只涉及到了两列数据（album和artist），而列存中同一列的数据放在一起，那么我们就可以<code>快速定位到所需要的列的位置</code>，然后只读取查询中所需要的列，有效<code>减少了无用的数据IO</code>（year 以及 genre）。同样的，如果使用行存处理该查询就无法起到 <code>列裁剪</code> 的作用，因为<code>一列中的数据被分散在文件中的各个位置</code>，每次IO<code>不可避免地需要读取到其他的数据</code>，所以需要<code>读取表中几乎所有的数据</code>才能满足查询的条件。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\d50735fae6cd7b89c147dc90cf4ab0afd9330e75-16569171293237.png" alt="img"></p>
+<p>列存适合处理在<code>几个列上作分析的查询</code>，因为可以避免读取到不需要的列数据，同时，同一列中的数据数据类型一致放置在一起也<code>十分适合压缩</code>。但是，如果需要对列存进行INSET INTO操作需要挪动几乎所有数据，效率十分低下。行存则只需要在文件末尾append一行数据即可。<strong>列存适合<code>读密集</code>的场景，特别是那些仅仅需要<code>部分列</code>的分析型查询；行存适合<code>写密集</code>的场景，或者不需要只查询某些列。</strong></p>
+<p>相对于传统的行存储模式，列存储主要有以下优点：</p>
+<ul>
+<li>可以跳过不符合条件的数据，只读取需要的数据，降低IO数据量。</li>
+<li>压缩编码可以降低磁盘存储空间。由于同一列的数据类型是一样的，可以使用更高效的压缩编码（例如Run Length Encoding和Delta Encoding）进一步节约存储空间。</li>
+<li>只读取需要的列，支持向量运算，能够获取更好的扫描性能。</li>
+<li>相对于其它的列式存储格式，例如ORC,Parquet主要优势在于支持更为广泛，且对嵌套数据的支持更好。</li>
+</ul>
+<h4 id="Parquet"><a href="#Parquet" class="headerlink" title="Parquet"></a>Parquet</h4><blockquote>
+<p>Apache Parquet是面向<code>分析型业务</code>的<code>列式存储格式</code>，由Twitter和Cloudera合作开发，Parquet是一种与语言无关的<strong>列式存储文件</strong>类型，可以适配多种计算框架。Parquet是目前比较流行的大数据文件列存储格式，主流的大数据计算框架都对其有良好的支持，包括spark,hive,impala等。</p>
+</blockquote>
+<h5 id="文件格式"><a href="#文件格式" class="headerlink" title="文件格式"></a>文件格式</h5><p>文件以二进制方式存储，不能直接读取和修改。</p>
+<p><img src="D:\自学\大数据\hadoop.assets\a08b87d6277f9e2f8e0acb23a65e1b2cb899f352-165691785390311.jpeg" alt="img"></p>
+<p>一个Parquet文件的内容有<code>Header</code>、<code>Data Block</code>和<code>Footer</code>三部分组成。</p>
+<p> <strong>Header</strong>：在文件的首尾各有一个内容为PAR1的Magic Number，用于标识这个文件为Parquet文件。Header部分就是开头的Magic Number。</p>
+<p> <strong>Data Block</strong>：Data Block是具体存放数据的区域，由多个<code>Row Group</code>（<strong>行组</strong>）组成，每个Row Group包含了一批数据。比如，假设一个文件有1000行数据，按照相应大小切分成了两个Row Group，每个拥有500行数据。每个Row Group中，数据<code>按列汇集存放</code>，每列的所有数据组合成一个<code>Column Chunk</code>（<strong>列块</strong>），一个列块具有<code>相同的数据类型</code>，不同的列块可以使用不同的压缩。因此一个Row Group由多个Column Chunk组成，Column Chunk的<code>个数等于列数</code>。每个Column Chunk中，数据按照**<code>Page</code>**为最小单元来存储，根据内容分为<code>Data Page</code>和<code>Index Page</code>。这样逐层设计的目的在于：</p>
+<ul>
+<li>多个 Group可以实现数据的并行 </li>
+<li>不同Column Chunk用来实现列存储 </li>
+<li>进一步分割成Page，可以实现更细粒度的数据访问</li>
+</ul>
+<p><strong>Footer</strong>：Footer部分由<code>File Metadata</code>、<code>Footer Length</code>和<code>Magic Number</code>三部分组成。Footer Length是一个4字节的数据，用于标识Footer部分的大小，帮助找到Footer的起始指针位置。Magic Number同样是PAR1。File Metada包含了非常重要的信息，包括<code>Schema</code>和<code>每个Row Group的Metadata</code>。每个Row Group的Metadata又<code>由各个Column的Metadata组成</code>，每个Column Metadata包含了其Encoding、Offset、Statistic信息等等。</p>
+<h5 id="性能调优"><a href="#性能调优" class="headerlink" title="性能调优"></a>性能调优</h5><p>如果采用HDFS文件系统，影响Parquet文件读写性能的参数主要有两个，dfs.blocksize和parquet.block.size</p>
+<ul>
+<li>dfs.blocksize: 控制HDFS file中每个block的大小，该参数主要影响计算任务的并行度，例如在spark中，一个map操作的默认分区数&#x3D;（输入文件的大小&#x2F;dfs.block.size）*输入的文件数（分区数等于该操作产生的任务数），如果dfs.block.size设置过大或过小，都会导致生成的Task数量不合理，因此应根据实际计算所涉及的输入文件大小以及executor数量决定何时的值。</li>
+<li>parquet.block.size 控制parquet的Row Group大小，一般情况下较大的值可以组织更大的连续存储的Column Chunk，有利于提升I&#x2F;O性能，但上面也提到Row group是数据读写时候的缓存单元，每个需要读写的parquet文件都需要在内存中占据Row Group size设置的内存空间（读取的情况，由于可能跳过部分列，占据的内存会小于Row Group size），这样更大的Row Group size意味着更多的内存开销。同时设置该值时还需要考虑dfs.blocksize的值，尽量让Row Group size等同于HDFS一个block的大小，因为单个Row Group必须在一个计算任务中被处理，如果一个Row Group跨越了多个hdfs block可能会导致额外的远程数据读取。一般推荐的参数一个Row group大小1G，一个HDFS块大小1G，一个HDFS文件只含有一个块。</li>
+</ul>
+<h5 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h5><p><strong>（1）列裁剪（offset of first data page -&gt; 列的起始结束位置）</strong></p>
+<p>Parquet列式存储方式可以方便地在读取数据到内存之间找到真正<code>需要的列</code>，具体是并行的task对应一个Parquet的行组（row group），每一个task内部有多个列块，列快连续存储，同一列的数据存储在一起，任务中先去访问footer的File metadata，其中包括每个行组的metadata，里面的Column Metadata记录<code>offset of first data page</code>和<code>offset of first index page</code>，这个记录了每个不同<code>列的起始位置</code>，这样就找到了需要的列的<code>开始和结束位置</code>。其中data和index是对数值和字符串数据的处理方式，对于字符变量会存储为key&#x2F;value对的字典转化为数值</p>
+<p><strong>（2）谓词下推（Column Statistic -&gt; 列的range和枚举值信息）</strong></p>
+<p>Parquet中File metadata记录了每一个Row group的Column statistic，包括数值列的max&#x2F;min，字符串列的枚举值信息，比如如果SQL语句中对一个数字列过滤&gt;21以上的，因此File 0的行组1和File 1的行组0不需要读取。</p>
+<p><strong>（3）压缩效率高，占用空间少，存储成本低</strong></p>
+<p>Parquet这类列式存储有着更高的压缩比，相同类型的数据为一列存储在一起方便压缩，不同列可以采用不同的压缩方式，结合Parquet的嵌套数据类型，可以通过高效的编码和压缩方式降低存储空间提高IO效率</p>
+<h3 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h3><p>mysql密码：991027Hmy#</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://hilaryhia.github.io/2022/07/12/hadoop/">https://hilaryhia.github.io/2022/07/12/hadoop/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/07/12/hadoop/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/07/12/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">15.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/HilaryHia" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:13708188893@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=530651827" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 530651827" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
